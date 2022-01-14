@@ -20,6 +20,8 @@ const TASKS = [
 
 function populateDiv() {
   const LIST = document.getElementById('list');
+  LIST.innerHTML =
+    '<form><div><textarea>Things to do</textarea><input type="text" placeholder="Add to your list..."></div></form>';
   TASKS.sort(function (a, b) {
     return a.index - b.index;
   });
