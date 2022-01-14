@@ -21,15 +21,6 @@ body {
   border-bottom: 0.0625rem solid #e2e2e2;
 }
 
-.heading textarea {
-  border-bottom: 0.0625rem solid #e2e2e2;
-}
-
-.heading input {
-  font-style: italic;
-  padding: 1.7rem;
-}
-
 textarea,
 input {
   border: none;
@@ -42,6 +33,15 @@ input {
   padding: 1.5rem 0.5rem 0.5rem 0.5rem;
   font-family: cursive;
   font-size: 1rem;
+}
+
+.heading textarea {
+  border-bottom: 0.0625rem solid #e2e2e2;
+}
+
+.heading input {
+  font-style: italic;
+  padding: 1.7rem;
 }
 
 button {
