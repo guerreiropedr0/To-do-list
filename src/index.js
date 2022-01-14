@@ -20,7 +20,9 @@ const TASKS = [
 
 function populateDiv() {
   const LIST = document.getElementById('list');
-
+  TASKS.sort(function (a, b) {
+    return a.index - b.index;
+  });
   for (let i = 0; i < TASKS.length; i += 1) {
     LIST.innerHTML += `<p>${TASKS[i].description}</p>`;
   }
