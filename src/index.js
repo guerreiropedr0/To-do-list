@@ -17,3 +17,13 @@ const TASKS = [
     index: 0,
   },
 ];
+
+function populateDiv() {
+  const LIST = document.getElementById('list');
+
+  for (let i = 0; i < TASKS.length; i += 1) {
+    LIST.innerHTML += `<p>${TASKS[i].description}</p>`;
+  }
+}
+
+populateDiv();
