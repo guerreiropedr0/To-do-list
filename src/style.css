@@ -6,6 +6,10 @@ body {
   height: 90vh;
 }
 
+h1 {
+  display: none;
+}
+
 #list {
   display: flex;
   flex-direction: column;
