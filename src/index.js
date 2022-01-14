@@ -26,7 +26,7 @@ function populateDiv() {
     return a.index - b.index;
   });
   for (let i = 0; i < TASKS.length; i += 1) {
-    LIST.innerHTML += `<input type="checkbox"><textarea>${TASKS[i].description}</textarea>`;
+    LIST.innerHTML += `<div><input type="checkbox"><textarea>${TASKS[i].description}</textarea></div>`;
   }
 }
 
