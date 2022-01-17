@@ -1,7 +1,7 @@
 import './style.css';
-import { Task, TaskList } from './modules/tasks.js';
+import TaskList from './modules/taskList.js';
 
-let taskList = new TaskList();
+const taskList = new TaskList();
 taskList.display();
 
 document.getElementById('list').addEventListener('submit', (event) => {
