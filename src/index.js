@@ -1,28 +1,10 @@
 import './style.css';
+import TaskList from './modules/taskList.js';
 
-const TASKS = [
-  {
-    description: 'do the dishes',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'workout',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'clean your room',
-    completed: false,
-    index: 0,
-  },
-];
+const taskList = new TaskList();
+taskList.display();
 
-(() => {
-  const LIST = document.getElementById('list');
-  LIST.innerHTML = '<form><div class="heading"><textarea>Things to do</textarea><input type="text" placeholder="Add to your list..."></div><button type="button">Clear all completed</button></form>';
-  TASKS.sort((a, b) => a.index - b.index);
-  for (let i = 0; i < TASKS.length; i += 1) {
-    LIST.innerHTML += `<div class="task"><input type="checkbox"><textarea>${TASKS[i].description}</textarea></div>`;
-  }
-})();
+document.getElementById('list').addEventListener('submit', (event) => {
+  event.preventDefault();
+  taskList.addTask();
+});

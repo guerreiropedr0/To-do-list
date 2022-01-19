@@ -35,17 +35,18 @@ input {
   box-shadow: none;
   resize: none;
   padding: 1.5rem 0.5rem 0.5rem 0.5rem;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
 
 .heading textarea {
   border-bottom: 0.0625rem solid #e2e2e2;
+  padding-left: 1rem;
 }
 
 .heading input {
   font-style: italic;
-  padding: 1.7rem;
+  padding: 1.7rem 1.7rem 1.7rem 1rem;
 }
 
 button {
@@ -59,10 +60,24 @@ button {
 button:hover {
   text-decoration: underline;
   color: #000;
+  cursor: pointer;
 }
 
 .task {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   border-bottom: 0.0625rem solid #e2e2e2;
+}
+
+.task textarea {
+  flex: 2;
+}
+
+.task input {
+  margin-left: 1rem;
+}
+
+.fa-trash-alt {
+  margin-right: 1rem;
 }
