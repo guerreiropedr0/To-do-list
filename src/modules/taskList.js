@@ -29,7 +29,11 @@ export default class TaskList {
 
     const INPUT_CHECKBOX = document.querySelectorAll('.task input');
     INPUT_CHECKBOX.forEach((checkbox) => {
-      checkbox.addEventListener('change', () => {});
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked === true) {
+          this.array[checkbox.id - 1].completed = true;
+        } else this.array[checkbox.id - 1].completed = false;
+      });
     });
   };
 
