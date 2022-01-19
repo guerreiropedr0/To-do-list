@@ -1,11 +1,12 @@
 import Task from './task.js';
+import StorageManager from './localStorage.js';
 
 export default class TaskList {
   constructor() {
-    this.array = [];
+    this.array = StorageManager.load();
   }
 
-  display() {
+  display = () => {
     const LIST = document.getElementById('list');
     LIST.innerHTML =
       '<form><div class="heading"><textarea>Things to do</textarea><input type="text" placeholder="Add to your list..."></div><button type="button">Clear all completed</button></form>';
@@ -25,9 +26,9 @@ export default class TaskList {
         this.editTask(task.id - 1, task);
       });
     });
-  }
+  };
 
-  addTask() {
+  addTask = () => {
     const task = new Task(
       document.querySelector("input[type='text'").value,
       false,
@@ -35,17 +36,20 @@ export default class TaskList {
     );
     this.array.push(task);
     this.display();
-  }
+    StorageManager.save(this.array);
+  };
 
-  removeTask(index) {
+  removeTask = (index) => {
     this.array.splice(index, 1);
     for (let i = index; i < this.array.length; i += 1) {
       this.array[i].index -= 1;
     }
     this.display();
-  }
+    StorageManager.save(this.array);
+  };
 
-  editTask(index, task) {
+  editTask = (index, task) => {
     this.array[index].description = task.value;
-  }
+    StorageManager.save(this.array);
+  };
 }
