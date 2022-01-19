@@ -3,8 +3,7 @@ export default class StorageManager {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   };
 
-  static load = () =>
-    localStorage.getItem('tasks') != null
-      ? JSON.parse(localStorage.getItem('tasks'))
-      : [];
+  static load = () => (localStorage.getItem('tasks') != null
+    ? JSON.parse(localStorage.getItem('tasks'))
+    : []);
 }
