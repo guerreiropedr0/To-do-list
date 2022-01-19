@@ -35,6 +35,9 @@ export default class TaskList {
         } else this.array[checkbox.id - 1].completed = false;
       });
     });
+    document.querySelector('.clear').addEventListener('click', () => {
+      this.removeChecked();
+    });
   };
 
   addTask = () => {
@@ -59,6 +62,15 @@ export default class TaskList {
 
   editTask = (index, task) => {
     this.array[index].description = task.value;
+    StorageManager.save(this.array);
+  };
+
+  removeChecked = () => {
+    this.array = this.array.filter((t) => t.completed === false);
+    this.array.forEach((task, index) => {
+      task.index = index + 1;
+    });
+    this.display();
     StorageManager.save(this.array);
   };
 }
