@@ -1,10 +1,10 @@
 import './style.css';
 import TaskList from './modules/taskList.js';
 
-const taskList = new TaskList();
-taskList.display();
+const TASK_LIST = new TaskList();
+TASK_LIST.display();
 
 document.getElementById('list').addEventListener('submit', (event) => {
   event.preventDefault();
-  taskList.addTask();
+  TASK_LIST.addTask();
 });
