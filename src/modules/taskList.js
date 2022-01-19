@@ -8,8 +8,7 @@ export default class TaskList {
 
   display = () => {
     const LIST = document.getElementById('list');
-    LIST.innerHTML =
-      '<form><div class="heading"><textarea>Things to do</textarea><input type="text" placeholder="Add to your list..."></div><button class="clear" type="button">Clear all completed</button></form>';
+    LIST.innerHTML = '<form><div class="heading"><textarea>Things to do</textarea><input type="text" placeholder="Add to your list..."></div><button class="clear" type="button">Clear all completed</button></form>';
     this.array.forEach((task) => {
       LIST.innerHTML += `<div class="task"><input id="${task.index}" type="checkbox"><textarea id="${task.index}">${task.description}</textarea><i id="${task.index}" class="far fa-trash-alt"></i></div>`;
     });
@@ -44,7 +43,7 @@ export default class TaskList {
     const TASK = new Task(
       document.querySelector("input[type='text'").value,
       false,
-      this.array.length + 1
+      this.array.length + 1,
     );
     this.array.push(TASK);
     this.display();
