@@ -8,7 +8,7 @@ With "To do List" you organize better the tasks you have everyday.
 
 ## Live demo
 
-[Live Demo Link](https://guerreiropedr0.github.io/Todo-list/)
+[Live Demo Link](https://guerreiropedr0.github.io/To-do-list/)
 
 ## Built With
 
