@@ -1,10 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Template
+# Project: To do List
 
-> This repository is a template to all my projects.
+> "To do List" is a website you can add tasks, complete them, clear the tasks and refresh.
 
-This template includes Webpack, Stylelint, ESlint and Weblint.
+With "To do List" you organize better the tasks you have everyday.
+
+## Live demo
+
+[Live Demo Link](https://guerreiropedr0.github.io/Todo-list/)
 
 ## Built With
 
@@ -15,11 +19,7 @@ This template includes Webpack, Stylelint, ESlint and Weblint.
 
 ## Getting Started
 
-```
-npm install
-npm run build
-npm start
-```
+Download the project, unzip it and open index.html file in the browser
 
 ## Authors
 
@@ -34,10 +34,6 @@ npm start
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-## Acknowledgments
-
-I took inspiration from a previous coding partner of mine, check his [GitHub profile](https://github.com/ahmedtaa)
 
 ## Show your support
 
