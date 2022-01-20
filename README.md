@@ -8,7 +8,7 @@ With "To do List" you organize better the tasks you have everyday.
 
 ## Live demo
 
-[Live Demo Link](https://guerreiropedr0.github.io/To-do-list/)
+In the following link, you can view my [To-do list website](https://guerreiropedr0.github.io/To-do-list/)
 
 ## Built With
 
@@ -19,7 +19,15 @@ With "To do List" you organize better the tasks you have everyday.
 
 ## Getting Started
 
-Download the project, unzip it and open index.html file in the browser
+> Make sure you have npm installed
+
+Clone the project and open terminal:
+
+```
+npm install
+npm run build
+npm start
+```
 
 ## Authors
 
