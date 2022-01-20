@@ -38,6 +38,7 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
+    "follow-redirects": "^1.14.7",
     "gh-pages": "^3.2.3"
   }
 }
