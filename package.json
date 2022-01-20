@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "follow-redirects": "^1.14.7",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "node-forge": "^1.2.1"
   }
 }
